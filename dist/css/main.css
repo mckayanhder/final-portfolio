@@ -106,11 +106,14 @@ black - #0C0D08 */
 }
 
 .menu-branding .portrait {
-  background-image: url("../img/portraitbw.png");
-  width: 187px;
-  height: 250px;
+  background-image: url("../img/ma-logo.png");
+  background-size: contain;
   border-radius: 50%;
-  border: 5px solid #9f8457;
+  border: 2px solid #9f8457;
+  height: 200px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.712);
+  opacity: 0.8;
 }
 
 .menu .nav-item {
@@ -231,16 +234,17 @@ body#bg-img:after {
 
 .logo {
   position: relative;
-  height: 10vh;
+  height: 20vh;
   width: auto;
   margin-top: 2vh;
-  left: 2%;
+  left: 3%;
   background-color: rgba(255, 255, 255, 0.623);
-  border-radius: 50%;
   -webkit-box-shadow: 0 4px 25px #9f8457;
           box-shadow: 0 4px 25px #9f8457;
   -webkit-transition: ease 2s;
   transition: ease 2s;
+  opacity: 0.6;
+  border: solid #9f8457 2px;
 }
 
 .logo:hover {
@@ -259,8 +263,7 @@ h1.lg-heading,
 h2.lg-heading,
 h3.lg-heading {
   font-size: 6rem;
-  background: rgba(7, 6, 6, 0.87);
-  border-radius: 0.5rem;
+  background: rgba(51, 51, 51, 0.267);
   border: solid #9f8457 3px;
   padding: 0.2rem 1rem;
   max-width: 70vw;
@@ -272,8 +275,7 @@ h2.sm-heading,
 h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(7, 6, 6, 0.87);
-  border-radius: 0.5rem;
+  background: rgba(51, 51, 51, 0.267);
   border: solid #9f8457 3px;
   max-width: 50vw;
 }
@@ -333,7 +335,7 @@ main#home h1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: bioimage;
-  background-color: rgba(51, 51, 51, 0.685);
+  background-color: rgba(51, 51, 51, 0.267);
   margin: auto;
   -webkit-box-shadow: 0 4px 25px #9f8457;
           box-shadow: 0 4px 25px #9f8457;
@@ -345,7 +347,7 @@ main#home h1 {
   -ms-grid-column-span: 2;
   grid-area: bio;
   font-size: 1.5rem;
-  background: rgba(51, 51, 51, 0.616);
+  background: rgba(51, 51, 51, 0.267);
   max-width: 70%;
   margin-bottom: 40px;
   padding-left: 30px;
@@ -373,7 +375,7 @@ main#home h1 {
 }
 
 .about-info .job {
-  background: rgba(34, 34, 34, 0.61);
+  background: rgba(51, 51, 51, 0.267);
   padding: 0.5rem;
   border-bottom: #9f8457 5px solid;
   -webkit-box-shadow: 0 4px 25px #9f8457;
@@ -428,7 +430,9 @@ main#home h1 {
 
 .bio2 i {
   margin-right: 50px;
+  margin-top: 20px;
   color: #9f8457;
+  font-size: 3rem;
 }
 
 .contact__input {
@@ -449,6 +453,24 @@ main#home h1 {
   color: white;
   border: none;
   font-size: 1rem;
+}
+
+.contact_section {
+  position: fixed;
+  right: 50%;
+  top: 40%;
+  background: rgba(51, 51, 51, 0.267);
+  padding: 20px 300px;
+  border: #9f8457 solid 2px;
+}
+
+.contact_section h2 {
+  margin-bottom: 30px;
+}
+
+.contact_section .contact__button {
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .contact__button:hover {

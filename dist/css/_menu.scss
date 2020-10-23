@@ -91,11 +91,14 @@
     }
 
     .portrait {
-      background-image: url("../img/portraitbw.png");
-      width: 187px;
-      height: 250px;
+      background-image: url("../img/ma-logo.png");
+      background-size: contain;
       border-radius: 50%;
-      border: 5px solid #9f8457;
+      border: 2px solid #9f8457;
+      height: 200px;
+      width: 200px;
+      background-color: rgba(255, 255, 255, 0.712);
+      opacity: 0.8;
     }
   }
 
